@@ -27,16 +27,18 @@ class TimerViewController: UIViewController {
     
     @IBAction func timerButtonClicked(_ sender: Any)
     {
-        buttonClickedCount += 1
+        if buttonClickedCount == 0 {
+            timerGoing = true
+            startTimer()
+            buttonClickedCount += 1
+        } else {
+            buttonClickedCount += 1
+        }
         
         if buttonClickedCount == 10
         {
             timerGoing = false
             stopTimer()
-        } else
-        {
-            timerGoing = true
-            startTimer()
         }
     }
     
