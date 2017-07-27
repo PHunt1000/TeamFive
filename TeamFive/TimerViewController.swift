@@ -10,12 +10,12 @@
 import UIKit
 
 class TimerViewController: UIViewController {
-
+    
+    @IBOutlet var timerValueLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Hi team five!!!!
         
-        // Makeing a conflict
 
     }
 
@@ -24,6 +24,7 @@ class TimerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet var timerButtonClicked: UIButton!
 
     /*
     // MARK: - Navigation
