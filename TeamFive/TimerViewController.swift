@@ -11,6 +11,9 @@ import UIKit
 
 class TimerViewController: UIViewController {
 
+    var timer = Timer()
+    var timerDouble = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Hi team five!!!!
@@ -19,20 +22,21 @@ class TimerViewController: UIViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: <#T##Selector#>, userInfo: nil, repeats: true)
     }
-    */
-
+    
+    func updateTimerLabel() {
+        timerDouble = timerDouble + 0.1
+        
+        
+        
+    }
+    
+    func stopTimer() {
+        timer.invalidate()
+    }
+    
 }
