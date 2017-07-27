@@ -16,13 +16,12 @@ class TimerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Hi team five!!!!
         
-        // Makeing a conflict
 
     }
 
     
+    @IBOutlet var timerButtonClicked: UIButton!
 
     func startTimer() {
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: <#T##Selector#>, userInfo: nil, repeats: true)
