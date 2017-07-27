@@ -53,7 +53,7 @@ class TimerViewController: UIViewController {
     func updateTimerLabel() {
         timerDouble = timerDouble + 0.1
         
-        timerValueLabel.text = "\(timerDouble))"
+        timerValueLabel.text = "\(timerDouble)"
         
     }
     
