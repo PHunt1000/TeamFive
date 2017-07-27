@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07EB03371F2A6F1F001D961B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB03361F2A6F1F001D961B /* TimerViewController.swift */; };
 		E8285CF41F2A6BFA00CA7061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8285CF31F2A6BFA00CA7061 /* AppDelegate.swift */; };
 		E8285CF61F2A6BFA00CA7061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8285CF51F2A6BFA00CA7061 /* ViewController.swift */; };
 		E8285CF91F2A6BFA00CA7061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8285CF71F2A6BFA00CA7061 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07EB03361F2A6F1F001D961B /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		E8285CF01F2A6BFA00CA7061 /* TeamFive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamFive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8285CF31F2A6BFA00CA7061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8285CF51F2A6BFA00CA7061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				E8285CF31F2A6BFA00CA7061 /* AppDelegate.swift */,
 				E8285CF51F2A6BFA00CA7061 /* ViewController.swift */,
 				E8285CF71F2A6BFA00CA7061 /* Main.storyboard */,
+				07EB03361F2A6F1F001D961B /* TimerViewController.swift */,
 				E8285CFA1F2A6BFA00CA7061 /* Assets.xcassets */,
 				E8285CFC1F2A6BFA00CA7061 /* LaunchScreen.storyboard */,
 				E8285CFF1F2A6BFA00CA7061 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8285CF61F2A6BFA00CA7061 /* ViewController.swift in Sources */,
+				07EB03371F2A6F1F001D961B /* TimerViewController.swift in Sources */,
 				E8285CF41F2A6BFA00CA7061 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				E8285D041F2A6BFA00CA7061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
