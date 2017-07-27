@@ -14,6 +14,8 @@ class TimerViewController: UIViewController {
     var timer = Timer()
     var timerDouble = 0.0
     
+    @IBOutlet var timerValueLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +23,13 @@ class TimerViewController: UIViewController {
     }
 
     
-    @IBOutlet var timerButtonClicked: UIButton!
+    @IBAction func timerButtonClicked(_ sender: Any)
+    {
+        
+        
+    }
+ 
+
 
     func startTimer() {
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: <#T##Selector#>, userInfo: nil, repeats: true)
