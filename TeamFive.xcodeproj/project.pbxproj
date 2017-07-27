@@ -13,6 +13,7 @@
 		E8285CF91F2A6BFA00CA7061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8285CF71F2A6BFA00CA7061 /* Main.storyboard */; };
 		E8285CFB1F2A6BFA00CA7061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8285CFA1F2A6BFA00CA7061 /* Assets.xcassets */; };
 		E8285CFE1F2A6BFA00CA7061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8285CFC1F2A6BFA00CA7061 /* LaunchScreen.storyboard */; };
+		E8285D081F2A8FF900CA7061 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8285D071F2A8FF900CA7061 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		E8285CFA1F2A6BFA00CA7061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8285CFD1F2A6BFA00CA7061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8285CFF1F2A6BFA00CA7061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8285D051F2A8FF600CA7061 /* TeamFive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeamFive.entitlements; sourceTree = "<group>"; };
+		E8285D071F2A8FF900CA7061 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8285D081F2A8FF900CA7061 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				E8285CF21F2A6BFA00CA7061 /* TeamFive */,
 				E8285CF11F2A6BFA00CA7061 /* Products */,
+				E8285D061F2A8FF900CA7061 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +61,7 @@
 		E8285CF21F2A6BFA00CA7061 /* TeamFive */ = {
 			isa = PBXGroup;
 			children = (
+				E8285D051F2A8FF600CA7061 /* TeamFive.entitlements */,
 				E8285CF31F2A6BFA00CA7061 /* AppDelegate.swift */,
 				E8285CF51F2A6BFA00CA7061 /* ViewController.swift */,
 				E8285CF71F2A6BFA00CA7061 /* Main.storyboard */,
@@ -65,6 +71,14 @@
 				E8285CFF1F2A6BFA00CA7061 /* Info.plist */,
 			);
 			path = TeamFive;
+			sourceTree = "<group>";
+		};
+		E8285D061F2A8FF900CA7061 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8285D071F2A8FF900CA7061 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,8 +113,16 @@
 				TargetAttributes = {
 					E8285CEF1F2A6BFA00CA7061 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = F67BF8327X;
+						DevelopmentTeam = BWYT76Q3DS;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -265,10 +287,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F67BF8327X;
+				CODE_SIGN_ENTITLEMENTS = TeamFive/TeamFive.entitlements;
+				DEVELOPMENT_TEAM = BWYT76Q3DS;
 				INFOPLIST_FILE = TeamFive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JHHS.TeamFive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JHHS.TeamFive2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -278,10 +301,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F67BF8327X;
+				CODE_SIGN_ENTITLEMENTS = TeamFive/TeamFive.entitlements;
+				DEVELOPMENT_TEAM = BWYT76Q3DS;
 				INFOPLIST_FILE = TeamFive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JHHS.TeamFive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JHHS.TeamFive2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
