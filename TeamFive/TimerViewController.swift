@@ -13,6 +13,8 @@ class TimerViewController: UIViewController {
 
     var timer = Timer()
     var timerDouble = 0.0
+    var timerGoing = false
+    var buttonClickedCount = 0
     
     @IBOutlet var timerValueLabel: UILabel!
     
@@ -25,10 +27,21 @@ class TimerViewController: UIViewController {
     
     @IBAction func timerButtonClicked(_ sender: Any)
     {
+        buttonClickedCount += 1
         
-        
+        if buttonClickedCount == 10
+        {
+            timerGoing = false
+            stopTimer()
+        } else
+        {
+            timerGoing = true
+            startTimer()
+        }
     }
- 
+    
+}
+
 
 
     func startTimer() {
