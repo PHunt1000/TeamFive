@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class ViewController: UIViewController {
 
@@ -14,9 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         
-        // Lets make a mess
-        // Random comment
-    }
+        }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
