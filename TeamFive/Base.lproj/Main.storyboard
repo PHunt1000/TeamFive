@@ -69,6 +69,9 @@
                                 <color key="backgroundColor" red="0.94306590025906734" green="0.94306590025906734" blue="0.94306590025906734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <state key="normal" title="Click me"/>
+                                <connections>
+                                    <action selector="timerButtonClicked:" destination="ZpI-oo-gsC" eventType="touchUpInside" id="Ezn-tt-cT5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGC-C0-TeY">
                                 <rect key="frame" x="49" y="154" width="143" height="47"/>
@@ -82,7 +85,6 @@
                         <color key="backgroundColor" red="0.2149412208" green="1" blue="0.93075259789999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="timerButtonClicked" destination="UXh-JY-Zdo" id="XXz-cY-dsE"/>
                         <outlet property="timerValueLabel" destination="xGC-C0-TeY" id="Uxe-JY-JnK"/>
                     </connections>
                 </viewController>

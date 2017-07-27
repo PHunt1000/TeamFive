@@ -24,8 +24,11 @@ class TimerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet var timerButtonClicked: UIButton!
-
+    @IBAction func timerButtonClicked(_ sender: Any)
+    {
+        
+    }
+ 
     /*
     // MARK: - Navigation
 
