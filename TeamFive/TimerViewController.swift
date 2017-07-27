@@ -32,13 +32,13 @@ class TimerViewController: UIViewController {
 
 
     func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: <#T##Selector#>, userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTimerLabel), userInfo: nil, repeats: true)
     }
     
     func updateTimerLabel() {
         timerDouble = timerDouble + 0.1
         
-        
+        timerValueLabel.text = "\(timerDouble))"
         
     }
     
